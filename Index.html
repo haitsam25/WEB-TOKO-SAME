@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            color: white; /* Mengatur warna teks menjadi putih untuk seluruh dokumen */
+        }
+        .neon-text {
+            color: white; /* Pastikan teks dengan kelas ini juga berwarna putih */
+        }
+        a {
+            color: white; /* Tautan akan berwarna putih */
+        }
+        a:hover {
+            color: lightgray; /* Opsional: Warna hover untuk tautan */
+        }
+        #about h2,
+        #products h2,
+        #why-us h2,
+        #contact h2,
+        #about p,
+        #products,
+        #why-us ul li,
+        #contact form,
+        #contact p {
+            color: white; /* Pastikan warna teks menjadi putih */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section Hero -->
+    <section id="hero">
+        <nav>
+            <button id="toggle-menu" class="btn">Menu</button>
+            <ul id="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="neon-text">Selamat Datang di Toko Kami!</h1>
+        <p class="neon-text">Temukan berbagai produk berkualitas dengan harga terbaik hanya di sini.</p>
+        <a href="#products" class="btn">Belanja Sekarang</a>
+    </section>
+
+    <!-- Section About -->
+    <section id="about">
+        <img src="profile.jpg" alt="Profil" class="profile-img">
+        <h2 class="neon-text">Tentang Kami</h2>
+        <p class="neon-text">NIM: 222303026</p>
+        <p class="neon-text">Nama: Haitsam Abdillah Firdaus</p>
+        <p class="neon-text">Alamat: Blok A5 No 1, Sumedang, Indonesia</p>
+        <p class="neon-text">Kami adalah toko online yang menyediakan Handphone berkualitas.</p>
+    </section>
+
+    <!-- Section Products -->
+    <section id="products">
+        <h2 class="neon-text">Produk Kami</h2>
+        <div class="product-grid">
+            <!-- Produk 1 sampai 10 -->
+            <div class="product-item">
+                <img src="product1.jpg" alt="Produk 1">
+                <h3>Iphone 15 Pro 6GB 258GB</h3>
+                <p>Rp.21,499,000 IDR</p>
+                <a href="#contact" class="btn" id="order-product1" data-product="Produk 1">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Produk 2">
+                <h3>Iphone 13 6GB 128GB</h3>
+                <p>Rp.15,199,000 IDR</p>
+                <a href="#contact" class="btn" id="order-product2" data-product="Produk 2">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product3.jpg" alt="Produk 3">
+                <h3>Iphone 15 Pro Max 512GB</h3>
+                <p>Rp.29,999,999 IDR</p>
+                <a href="#contact" class="btn" id="order-product3" data-product="Produk 3">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product4.jpg" alt="Produk 4">
+                <h3>Iphone 12 64GB/128GB</h3>
+                <p>Rp.7,599,000 IDRS</p>
+                <a href="#contact" class="btn" id="order-product4" data-product="Produk 4">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product5.jpg" alt="Produk 5">
+                <h3>ASUS ROG PHONE 3 5G 256GB</h3>
+                <p>Rp.5,945,000 IDR</p>
+                <a href="#contact" class="btn" id="order-product5" data-product="Produk 5">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product6.jpg" alt="Produk 6">
+                <h3>Xiomi 14 256GB</h3>
+                <p>Rp.11,999,000 IDR</p>
+                <a href="#contact" class="btn" id="order-product6" data-product="Produk 6">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product7.jpg" alt="Produk 7">
+                <h3>Poco X3 Pro 256GB</h3>
+                <p>Rp.3,299,000 IDR</p>
+                <a href="#contact" class="btn" id="order-product7" data-product="Produk 7">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product8.jpg" alt="Produk 8">
+                <h3>Google Pixel 9 Pro 512GB</h3>
+                <p>Rp.16,499,000 IDR</p>
+                <a href="#contact" class="btn" id="order-product8" data-product="Produk 8">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product9.jpg" alt="Produk 9">
+                <h3>Samsung flip Z 258GB</h3>
+                <p>Rp.8,300,000 IDR</p>
+                <a href="#contact" class="btn" id="order-product9" data-product="Produk 9">Pesan Sekarang</a>
+            </div>
+            <div class="product-item">
+                <img src="product10.jpg" alt="Produk 10">
+                <h3>Black Shark 2 128GB</h3>
+                <p>Rp.4,999,999 IDR</p>
+                <a href="#contact" class="btn" id="order-product10" data-product="Produk 10">Pesan Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Why Us -->
+    <section id="why-us">
+        <h2>Kenapa Memilih Kami?</h2>
+        <ul>
+            <li>Produk berkualitas tinggi</li>
+            <li>Layanan pelanggan terbaik</li>
+            <li>Harga kompetitif</li>
+            <li>Pengiriman cepat dan aman</li>
+        </ul>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+        <p>Hubungi kami yahh :V <a href="https://wa.me/081222049446" class="btn" id="whatsapp-link">Klik di sini</a></p>
+    </section>
+
+    <script>
+        document.getElementById('toggle-menu').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        });
+
+        // Ambil semua tombol dengan kelas "Pesan Sekarang"
+        const orderButtons = document.querySelectorAll('.btn[id^="order-"]');
+        const messageField = document.querySelector('textarea[name="message"]');
+        const whatsappLink = document.querySelector('#whatsapp-link');
+
+        orderButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const productName = this.getAttribute('data-product'); // Ambil data produk dari tombol
+                
+                // Pastikan jika sudah ada pesan sebelumnya, tambahkan produk ke pesan yang ada
+                if (messageField.value) {
+                    messageField.value += `\nSaya juga ingin memesan ${productName}.`;
+                } else {
+                    messageField.value = `Saya ingin memesan ${productName}.`; // Jika kosong, tambahkan pesan baru
+                }
+
+                // Update link WhatsApp dengan pesan yang sudah di
+                // Update link WhatsApp dengan pesan yang sudah diubah
+                const encodedMessage = encodeURIComponent(messageField.value);
+                whatsappLink.href = `https://wa.me/081222049446?text=${encodedMessage}`;
+            });
+        });
+    </script>
+
+</body>
+</html>

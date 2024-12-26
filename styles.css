@@ -1,0 +1,246 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff; /* Mengubah teks menjadi putih */
+    background-color: #f9f9f9;
+    background-image: url('background.jpg'); /* Menambahkan gambar latar belakang untuk seluruh halaman */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Menjaga gambar tetap pada posisi saat scroll */
+}
+
+/* Hero Section */
+#hero {
+    background: transparent; /* Mengubah background menjadi transparan */
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    font-size: 1.2rem;
+}
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff; /* Teks berwarna putih */
+}
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* Teks berwarna putih */
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Menu Style */
+#menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0;  /* Mulai dengan opacity 0 */
+    transform: translateY(-20px); /* Mulai dari posisi atas */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi halus */
+}
+
+/* Tampilkan menu dengan transisi */
+#menu.show {
+    display: block;
+    opacity: 1; /* Ketika menu ditampilkan */
+    transform: translateY(0); /* Menu bergerak ke posisi semula */
+}
+
+/* Menu Item */
+#menu li {
+    margin: 10px 0;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff; /* Teks berwarna putih */
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+}
+
+#menu a:hover {
+    color: #007bff;
+    background-color: #f0f0f0; /* Efek hover pada menu */
+}
+
+/* Button Styling */
+.btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff; /* Teks berwarna putih */
+}
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* Teks berwarna putih */
+}
+
+/* Profil Section */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff; /* Teks berwarna putih */
+}
+
+.profile-img {
+    width: 150px; /* Ukuran gambar yang lebih fleksibel */
+    height: 150px; /* Pastikan tinggi dan lebar gambar proporsional */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    border: 4px solid #ff5722; /* Menambahkan border berwarna sesuai tema */
+    object-fit: cover; /* Memastikan gambar ter-crop dengan baik */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan shadow untuk efek 3D */
+    position: relative;
+    animation: neonGlow 1.5s infinite alternate; /* Menambahkan animasi efek neon */
+}
+
+/* Efek Neon untuk foto */
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff5722, 0 0 20px #ff5722, 0 0 25px #ff5722, 0 0 30px #ff5722;
+    }
+    100% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff5722, 0 0 20px #ff5722, 0 0 25px #ff5722, 0 0 30px #ff5722;
+    }
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* Teks berwarna putih */
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #fff; /* Teks berwarna putih */
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.product-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    color: #fff; /* Teks berwarna putih */
+}
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.product-item h3 {
+    margin-bottom: 10px;
+    color: #fff; /* Teks berwarna putih */
+}
+.product-item p {
+    color: #fff; /* Teks berwarna putih */
+    margin-bottom: 15px;
+}
+
+/* Why Us Section */
+#why-us ul {
+    list-style: none;
+    padding: 0;
+    color: #fff; /* Teks berwarna putih */
+}
+#why-us ul li {
+    background: #ff5722;
+    color: #fff; /* Teks berwarna putih */
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: #fff; /* Teks berwarna putih */
+}
+form input, form textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff; /* Teks berwarna putih */
+}
+form button {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+form button:hover {
+    background: #e64a19;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff; /* Teks berwarna putih */
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero p {
+        font-size: 1.2rem; /* Ukuran font untuk paragraf */
+        line-height: 1.5; /* Jarak antar baris */
+    }
+    #hero {
+        padding: 20px; /* Padding untuk elemen hero */
+        text-align: center; /* Menyesuaikan teks agar berada di tengah */
+    }
+}
